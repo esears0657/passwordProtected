@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //the script to determine if the user's value is equal to username and tells the user if they're correct or not.
+        function submit() {
+            if (document.getElementById("username").value == "Username" && document.getElementById("password").value == "Password") {
+                document.getElementById("result").innerHTML = "Success";
+            } else {
+                document.getElementById("result").innerHTML = "Wrong Information";
+            }
+
+        }
+        //Below just creates the input buttons and makes placeholder text showing which box is which
+    </script>
+    
+    <input type="text" id="username" placeholder="username">
+    <input type="password" id="password" placeholder="password">
+    <input type="button" name="button" value="submit" onclick="submit()">
+
+    <div id="result"> </div>
+</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
